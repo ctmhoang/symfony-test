@@ -1,6 +1,6 @@
 # Notes
 
-## Synfony cli
+## Symfony cli
 
 * symfony check:req
 * symfony new `dir`
@@ -9,6 +9,9 @@
     * no-tls
     * deamon (-d)
 * symfony server:stop|status
+
+* php `bin/console`
+    * Debugging tools
 
 ## Create route
 
@@ -19,4 +22,13 @@
 
 ## composer (alias cps)
 
+* has alias and recipe
 * cps require annotations (like install npm)
+* cps remove
+  *pkgs-alias
+    * annotations
+    * sec-checker
+* flag
+    * --dev
+* recipe pkg
+
