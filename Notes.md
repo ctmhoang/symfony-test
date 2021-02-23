@@ -7,3 +7,7 @@
     * no-tls
     * deamon (-d)
 * symfony server:stop|status
+
+## Create route
+* Using YAML in config folder
+* 
