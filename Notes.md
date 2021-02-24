@@ -1,5 +1,10 @@
 # Notes
 
+## Basic
+
+* Bundle => symfony plugin
+* Other composure plugin (flex is composer plugin)
+
 ## Symfony cli
 
 * symfony check:req
@@ -32,3 +37,24 @@
     * --dev
 * recipe pkg
 
+## Controller
+
+* Render template `extends AbstractController`
+    * `render'(filename from path in config,[variables])`
+
+## Twig
+
+* Config file in config/pkgs
+* 3 type of syntax
+    * `{{}}`print
+      *`{%%}`expression
+    * `{##}` comment
+* Twig has 3 types of operation
+    * Tags (has end tags)
+        * `extends`
+            * Can overwrite tags in template
+        * `block`
+    * Filter (Like Piping |)
+    * Function
+    * Test (is keyword)
+  
