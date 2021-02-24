@@ -4,10 +4,11 @@
 namespace App\Controller;
 
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class QuestionController
+class QuestionController extends AbstractController
 {
     /**
      * @Route("/")
@@ -24,7 +25,10 @@ class QuestionController
      */
     public function show(string $slug): Response
     {
-        $slug = ucwords(str_replace("-", " ", $slug));
-        return new Response("placeholder text for $slug future page");
+        $ans = ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestiae!',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestiae!',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestiae!'];
+        return $this->render('question/show.html.twig', ['question' => ucwords(str_replace("-", " ", $slug)),
+            'ans' => $ans]);
     }
 }
